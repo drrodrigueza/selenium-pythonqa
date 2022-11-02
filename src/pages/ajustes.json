@@ -1,0 +1,42 @@
+{
+
+  "Titulo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a[contains(text(),'Cargar ajuste')]"
+  },
+
+  "Shalom": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/ngb-modal-window[1]/div[1]/div[1]/app-almacen-modal[1]/div[1]/div[2]/ul[1]/li[1]"
+  },
+
+  "Tipos": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/app-root[1]/block-ui[1]/main[1]/div[3]/div[1]/app-ajuste-inventario[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]"
+  },
+
+  "Seleccionar CSV": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(text(),'Seleccionar CSV')]"
+  },
+
+  "Guardar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(text(),'Guardar')]"
+  },
+
+  "Código": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/ngb-modal-window/div/div/app-msg/div/div[2]/div[2]/h4"
+  },
+
+  "Confirmación": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='codigo_confirmacion']"
+  },
+
+  "Aceptar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(text(),'Aceptar')]"
+  }
+}

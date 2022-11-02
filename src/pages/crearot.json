@@ -1,0 +1,31 @@
+{
+  "Albrook": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/ngb-modal-window/div/div/app-tienda-modal/div/div[2]/ul/li[1]"
+  },
+
+  "Marquesa": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/ngb-modal-window/div/div/app-tienda-modal/div/div[2]/ul/li[7]/b"
+  },
+
+  "Material": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='material']"
+  },
+
+  "Cantidad solicitada": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='cantidad_solicitada']"
+  },
+
+  "Agregar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/ngb-modal-window[1]/div[1]/div[1]/app-modal-agregar-material[1]/div[1]/div[3]/button[2]"
+  },
+
+  "Guardar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(text(),'Guardar')]"
+  }
+}

@@ -1,0 +1,98 @@
+{
+
+  "Titulo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a[contains(text(),'WMS Bodegas de Tiendas')]"
+  },
+
+  "Num Personal": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/app-root[1]/main[1]/div[2]/div[1]/app-usuario-crear[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/input[1]"
+  },
+
+  "Numero Personal": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/app-root[1]/block-ui[1]/main[1]/div[3]/div[1]/app-usuario-crear[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/input[1]"
+  },
+
+  "Crear Usuario": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//h4[contains(text(),'Crear Usuario')]"
+  },
+
+  "Nombre Usuario": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/app-root[1]/main[1]/div[2]/div[1]/app-usuario-crear[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/input[1]"
+  },
+
+  "Nombre": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='nombre']"
+  },
+
+  "Apellido": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/app-root[1]/main[1]/div[2]/div[1]/app-usuario-crear[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[2]/input[1]"
+  },
+
+  "ApellidoCD": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/app-root[1]/block-ui[1]/main[1]/div[3]/div[1]/app-usuario-crear[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[2]/input[1]"
+  },
+
+  "Roles": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='roles']"
+  },
+
+  "Tiendas": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='tiendas']"
+  },
+
+  "Almacenes": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='almacenes']"
+  },
+
+  "Departamentos": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='departamentos']"
+  },
+
+  "Clave": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/app-root[1]/main[1]/div[2]/div[1]/app-usuario-crear[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/div[1]/input[1]"
+  },
+
+  "Password": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/app-root[1]/block-ui[1]/main[1]/div[3]/div[1]/app-usuario-crear[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[1]/input[1]"
+  },
+
+  "Repetir": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/app-root[1]/main[1]/div[2]/div[1]/app-usuario-crear[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/div[2]/input[1]"
+  },
+
+  "Repetir Password": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/app-root[1]/block-ui[1]/main[1]/div[3]/div[1]/app-usuario-crear[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[2]/input[1]"
+  },
+
+  "Guardar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(text(),'Guardar')]"
+  },
+
+  "Mensaje": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@id='toast-container']/div/div"
+  },
+
+  "Mensaje error": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[@id='toast-container']"
+  }
+
+}

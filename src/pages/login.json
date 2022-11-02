@@ -1,0 +1,37 @@
+{
+  "Logo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//header/nav[1]/div[1]/div[1]/span[1]"
+  },
+
+  "Titulo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a[contains(text(),'WMS Bodegas de Tiendas')]"
+  },
+
+  "Sesion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//h4[contains(text(),'Iniciar Sesión')]"
+  },
+
+  "Usuario TDA": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='usuario']"
+  },
+
+  "Usuario CD": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='nro_personal']"
+  },
+
+    "Clave": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='password']"
+  },
+
+  "Ingresar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(text(),'Ingresar')]"
+  }
+
+}
