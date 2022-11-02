@@ -1,0 +1,8 @@
+.idea
+ + self.PerfilChrome
+.pytest_cache
+allure-report
+allure-results
+PerfilChrome
+self.PerfilChrome
+src/Data/perfiles

@@ -1,0 +1,261 @@
+{
+
+  "Titulo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-recibo-rapido/div/div/app-card-header/div/app-breadcrumbs/nav/ol/li[3]/a"
+  },
+
+  "Shalom": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/ngb-modal-window[1]/div[1]/div[1]/app-almacen-modal[1]/div[1]/div[2]/ul[1]/li[1]"
+  },
+
+  "Pedido Compra": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-pedido-compra-consultar/div/div/div/div/div/form[2]/div[1]/div/div[1]/p"
+  },
+
+  "Estatus Creado": {
+    "GetFieldBy": "name",
+    "ValueToFind": "search-estado_str"
+  },
+
+  "Estatus1": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//tbody/tr[1]/td[6]/span[3]"
+  },
+  "EAN Pedido1": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-pedido-compra-consultar/div/div/div/div/div/app-generic-datatable/div/div/div[2]/div/table/tbody/tr[1]/td[2]/span[3]"
+  },
+
+  "Cantidad Pedido1": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-pedido-compra-consultar/div/div/div/div/div/app-generic-datatable/div/div/div[2]/div/table/tbody/tr[1]/td[5]/span[3]"
+  },
+
+  "EAN Pedido2": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-pedido-compra-consultar/div/div/div/div/div/app-generic-datatable/div/div/div[2]/div/table/tbody/tr[2]/td[2]/span[3]"
+  },
+
+  "Cantidad Pedido2": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-pedido-compra-consultar/div/div/div/div/div/app-generic-datatable/div/div/div[2]/div/table/tbody/tr[2]/td[5]/span[3]"
+  },
+
+  "EAN Pedido3": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-pedido-compra-consultar/div/div/div/div/div/app-generic-datatable/div/div/div[2]/div/table/tbody/tr[3]/td[2]/span[3]"
+  },
+
+  "Cantidad Pedido3": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-pedido-compra-consultar/div/div/div/div/div/app-generic-datatable/div/div/div[2]/div/table/tbody/tr[3]/td[5]/span[3]"
+  },
+
+  "EAN Pedido4": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-pedido-compra-consultar/div/div/div/div/div/app-generic-datatable/div/div/div[2]/div/table/tbody/tr[4]/td[2]/span[3]"
+  },
+
+  "Cantidad Pedido4": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-pedido-compra-consultar/div/div/div/div/div/app-generic-datatable/div/div/div[2]/div/table/tbody/tr[4]/td[5]/span[3]"
+  },
+
+  "EAN Pedido5": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-pedido-compra-consultar/div/div/div/div/div/app-generic-datatable/div/div/div[2]/div/table/tbody/tr[5]/td[2]/span[3]"
+  },
+
+  "Cantidad Pedido5": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-pedido-compra-consultar/div/div/div/div/div/app-generic-datatable/div/div/div[2]/div/table/tbody/tr[5]/td[5]/span[3]"
+  },
+
+  "PEDIDO": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@id='Pedido']"
+  },
+
+  "EAN": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-recibo-rapido/div/div/div/div/div/div[3]/app-bardcode-scanner/div/input"
+  },
+
+  "EAN NAC": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-recibo-nacional/div/div/div/div/div/div[7]/app-bardcode-scanner/div/input"
+  },
+
+  "CANTIDAD A RECIBIR": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@id='cantidad_recibida']"
+  },
+
+  "UNIDAD DE EMPAQUE": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@id='unidEmpaque']"
+  },
+
+  "GUARDAR": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(text(),'Guardar')]"
+  },
+
+  "IMPRIMIR": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-recibo-rapido/div/div/div/div/div/div[3]/app-impresora-modal/button"
+  },
+
+  "Imprimir": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-recibo-nacional/div/div/div/div/div/div[7]/app-impresora-modal[1]/button"
+  },
+
+  "OCULTAR IMPRESOS": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//label[contains(text(),'Ocultar materiales impresos')]"
+  },
+
+  "ETIQUETAS CEDIS": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(text(),'Etiquetas CEDIS')]"
+  },
+
+  "IMPRESORA SIN FOTO": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/ngb-modal-window[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]"
+  },
+
+  "IMPRESORA CON FOTO": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/ngb-modal-window[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[2]/div[1]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]"
+  },
+
+  "ACEPTAR": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(text(),'Aceptar')]"
+  },
+
+  "MODAL CERRAR": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a[contains(text(),'Cerrar')]"
+  },
+
+  "Guardar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(text(),'Guardar')]"
+  },
+
+  "Mensaje": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@id='toast-container']/div/div"
+  },
+
+  "Prepack": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@id='pulmon']"
+  },
+
+  "Pulmon": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a[@id='pulmon']"
+  },
+
+  "Seleccionar materiales": {
+    "GetFieldBy": "name",
+    "ValueToFind": "cbColumn"
+  },
+
+  "Pasar a Pulmon": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-recibo-rapido/div/div/div/div/div/div[3]/div/button"
+  },
+
+  "Pasar a Pulmon Nac": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-recibo-nacional/div/div/div/div/div/div[7]/div/button"
+  },
+
+  "Refrescar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@id='pulmon-panel']/app-generic-datatable/button/i"
+  },
+
+  "Refresh": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@id='distribucion-panel']/div[3]/app-generic-datatable/button/i"
+  },
+
+  "Refresh Pulmon Nac": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/app-root[1]/block-ui[1]/main[1]/div[3]/div[1]/app-recibo-nacional[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[8]/ngb-tabset[1]/div[1]/div[1]/app-generic-datatable[1]/button[1]/i[1]"
+  },
+
+  "Filtro Pedido": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//thead/tr[2]/th[2]/input[1]"
+  },
+
+  "Bultos Tiendas": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/app-root[1]/block-ui[1]/main[1]/div[3]/div[1]/app-pedido-bulto[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[2]"
+  },
+
+  "Bultos CEDIS": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/app-root[1]/block-ui[1]/main[1]/div[3]/div[1]/app-pedido-bulto[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[3]"
+  },
+
+  "Bultos Enganche": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/app-root[1]/block-ui[1]/main[1]/div[3]/div[1]/app-pedido-bulto[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[4]"
+  },
+
+  "ID Manifiesto": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-manifiesto/div/div/div/div/div/app-generic-datatable/div/div/div[2]/table/tbody/tr[1]/td[2]/a"
+  },
+
+  "Ver Asiento": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a[contains(text(),'Ver / Ocultar asiento')]"
+  },
+
+  "Modif Enganche": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//tbody/tr[1]/td[1]/a[1]/img[1]"
+  },
+
+  "M002": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/ngb-modal-window[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[4]/div[2]/input[1]"
+  },
+
+  "M007": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/ngb-modal-window[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[9]/div[2]/input[1]"
+  },
+
+  "M009": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/ngb-modal-window[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[12]/div[2]/input[1]"
+  },
+
+  "Compuesto": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//tbody/tr[1]/td[1]/button[1]/i[1]"
+  },
+
+  "Partes": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='partes']"
+  },
+
+  "SI": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a[contains(text(),'SI')]"
+  }
+}
