@@ -295,7 +295,7 @@ class Functions(Inicializar):
 
     ##############   -=_Wait Elements_=-   #############################
     ##########################################################################
-    def esperar(self, timeLoad=8):
+    def esperar(self, timeLoad=12):
         print ("Esperar: Inicia ("+str(timeLoad)+")")
         try:
                 totalWait = 0

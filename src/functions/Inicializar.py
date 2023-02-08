@@ -21,7 +21,7 @@ class Inicializar():
     # HOJA DE DATOS EXCEL
     Excel = basedir + u'/data/DataTest.xlsx'
 
-    CSV = 'C:\\fakepath\\ajuste_inventario (7).csv' #basedir + u'/Data/ajuste_inventario.csv'
+    #CSV = basedir + u'/data/ajuste_inventario.csv'
 
 
     PerfilChrome = basedir + u'/Data/perfiles/TestChrome'
@@ -87,6 +87,7 @@ class Inicializar():
             "ListaOT": "https://qa-tiendas-frontend.titan.com.pa/transporte/ordentransporte",
             "Ajustes": "https://qa-cedis-front.titan.com.pa/inventario/materialubicacion/ajuste-inventario",
             "ReciboNacional": "https://qa-cedis-front.titan.com.pa/recibo/pedidocompramaterial/recibo-nacional",
+            "ArmarBox": "https://qa-cedis-front.titan.com.pa/enganche/bultoarmado/crear",
             "TipoAjuste": "Diferencia en Inventario",
             "MaterialOT": "G3",
             "Cantidad": "H3",
@@ -95,8 +96,12 @@ class Inicializar():
             "PEDIDONE": "A9",
             "PEDIDOCOMP": "A17",
             "PEDIDONAC": "A21",
+            "PEDIDONAC2": "A22",
+            "PEDIDONACOMP": "A24",
             "CantNac": "C21",
+            "CantNCOMP": "C24",
             "Empaque": "F21",
+            "EmpaqueCOMP": "F24",
             "EAN1": "B2",
             "EAN2": "B3",
             "EAN3": "B4",
@@ -108,12 +113,19 @@ class Inicializar():
             "EAN9": "B19",
             "EAN10": "B21",
             "EAN11": "B22",
-            "EAN12": "B23",
+            "EAN12": "B24",
             "M002": "K2",
             "M007": "K3",
             "M009": "K4",
             "NPartes": "C17",
             # "UMP": round(CANTIDAD1 / 2),
             "IMPRESORAZEBRA": "Epson test",
-            "IMPRESORAEPSON": "Isla07"
+            "IMPRESORAEPSON": "Isla07",
+            "Bulto": "A32",
+            "EAN": "B32",
+            "Enganchador": "C32",
+            "Preparador": "D32",
+            "Destino": "E32",
+            "Cant": "F32",
+            "CSV": "basedir + u'/data/ajuste_inventario.csv'"
         }
