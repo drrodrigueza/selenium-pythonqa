@@ -20,7 +20,7 @@ Feature: Recibo Nacional
     And le doy click en Shalom
     And esperamos
 
-  @RN_CEDIS_PPK @ReciboNacional
+  @ReciboNacional @RN_CEDIS_PPK
   Scenario: RECIBO NACIONAL - APLICA PREPACK - SOLO ENGANCHE
     And En el campo PEDIDO escaneamos/ingresamos Scenario:PEDIDONAC
     And En el campo EAN NAC escaneamos/ingresamos Scenario:EAN10
@@ -69,8 +69,8 @@ Feature: Recibo Nacional
     And esperamos
     And Capturo pantalla DetalleManifiesto
 
-  @RN_CEDIS_PPK2 @ReciboNacional
-  Scenario: RECIBO NACIONAL - APLICA PREPACK Cambio de CTD Enganche
+  @ReciboNacional @RN_CEDIS_PPK2
+  Scenario: RECIBO NACIONAL - APLICA PREPACK Cambio de CTD Enganche Varios Centros
     And En el campo PEDIDO escaneamos/ingresamos Scenario:PEDIDONAC2
     And En el campo EAN NAC escaneamos/ingresamos Scenario:EAN11
     And En el campo CANTIDAD A RECIBIR escaneamos/ingresamos Scenario:CantNac2
@@ -144,7 +144,7 @@ Feature: Recibo Nacional
     And esperamos
     And Capturo pantalla DetalleManifiesto
 
-  @RN_CEDIS_COMP @ReciboNacional
+  @ReciboNacional @RN_CEDIS_COMP
   Scenario: RECIBO NACIONAL - MATERIALES COMPUESTOS
     And En el campo PEDIDO escaneamos/ingresamos Scenario:PEDIDONACOMP
     And En el campo EAN NAC escaneamos/ingresamos Scenario:EAN12
@@ -185,7 +185,7 @@ Feature: Recibo Nacional
     And esperamos
     And Capturo pantalla DetalleManifiesto
 
-  @RN_CEDIS_COMP2 @ReciboNacional
+  @ReciboNacional @RN_CEDIS_COMP2
   Scenario: RECIBO NACIONAL - MATERIALES COMPUESTOS VARIOS CENTROS
     And En el campo PEDIDO escaneamos/ingresamos Scenario:PEDIDONACOMP2
     And En el campo EAN NAC escaneamos/ingresamos Scenario:EAN13
@@ -234,7 +234,7 @@ Feature: Recibo Nacional
     And esperamos
     And Capturo pantalla DetalleManifiesto
 
-  @RN_CEDIS_COMB @ReciboNacional
+  @ReciboNacional @RN_CEDIS_COMB
   Scenario: RECIBO NACIONAL - COMBINADO (PPK - COMPUESTO - REGULAR - CONTENEDOR)
     And En el campo PEDIDO escaneamos/ingresamos Scenario:PEDIDONACOMB
     # Recibo material PPK
@@ -259,8 +259,40 @@ Feature: Recibo Nacional
     And le doy click en ACEPTAR
     And le doy click en MODAL CERRAR
     And esperamos
+    And Ingresamos a Scenario:ListadoBultos
+    And le doy click en Shalom
+    And En el campo Filtro Pedido escaneamos/ingresamos Scenario:PEDIDONACOMB
+    And le doy click en Bultos Enganche
     And esperamos
+    And Capturo pantalla Bto-ENGANCHE
+    And Ingresamos a Scenario:ReciboNacional
+    And esperamos
+    And En el campo PEDIDO escaneamos/ingresamos Scenario:PEDIDONACOMB
+    And le doy click en Pulmon
+    And esperamos
+    And Capturo pantalla PorPasarAPulmon
+    And esperamos
+    And esperamos
+    And le doy click en Seleccionar materiales
+    And esperamos
+    And le doy click en Pasar a Pulmon Nac
+    And esperamos
+    And le doy click en Guardar
+    And esperamos
+    And le doy click en Refresh Pulmon Nac
+    And esperamos
+    And Capturo pantalla EnPulmon
+    And esperamos
+    And Ingresamos a Scenario:MANIFIESTOS
+    And esperamos
+    And Capturo pantalla Manifiestos
+    And le doy click en ID Manifiesto
+    And esperamos
+    And le doy click en Ver Asiento
+    And esperamos
+    And Capturo pantalla DetalleManifiesto
     # Recibo material COMPUESTO
+    And Ingresamos a Scenario:ReciboNacional
     And En el campo PEDIDO escaneamos/ingresamos Scenario:PEDIDONACOMB
     And En el campo EAN NAC escaneamos/ingresamos Scenario:EANCOMP
     And En el campo CANTIDAD A RECIBIR escaneamos/ingresamos Scenario:CantNCOMB
@@ -285,7 +317,23 @@ Feature: Recibo Nacional
     And le doy click en SI
     And le doy click en MODAL CERRAR
     And esperamos
+    And Ingresamos a Scenario:ListadoBultos
+    And le doy click en Shalom
+    And En el campo Filtro Pedido escaneamos/ingresamos Scenario:PEDIDONACOMB
+    And le doy click en Bultos Tiendas
+    And esperamos
+    And Capturo pantalla Bto-Tiendas
+    And esperamos
+    And Ingresamos a Scenario:MANIFIESTOS
+    And esperamos
+    And Capturo pantalla Manifiestos
+    And le doy click en ID Manifiesto
+    And esperamos
+    And le doy click en Ver Asiento
+    And esperamos
+    And Capturo pantalla DetalleManifiesto
     # Recibo material REGULAR
+    And Ingresamos a Scenario:ReciboNacional
     And En el campo PEDIDO escaneamos/ingresamos Scenario:PEDIDONACOMB
     And En el campo EAN NAC escaneamos/ingresamos Scenario:EANREG
     And En el campo CANTIDAD A RECIBIR escaneamos/ingresamos Scenario:CantNCOMB
@@ -303,7 +351,23 @@ Feature: Recibo Nacional
     And le doy click en SI
     And le doy click en MODAL CERRAR
     And esperamos
+    And Ingresamos a Scenario:ListadoBultos
+    And le doy click en Shalom
+    And En el campo Filtro Pedido escaneamos/ingresamos Scenario:PEDIDONACOMB
+    And le doy click en Bultos Tiendas
+    And esperamos
+    And Capturo pantalla Bto-Tiendas
+    And esperamos
+    And Ingresamos a Scenario:MANIFIESTOS
+    And esperamos
+    And Capturo pantalla Manifiestos
+    And le doy click en ID Manifiesto
+    And esperamos
+    And le doy click en Ver Asiento
+    And esperamos
+    And Capturo pantalla DetalleManifiesto
     # Recibo material BULTO CONTENEDOR
+    And Ingresamos a Scenario:ReciboNacional
     And En el campo PEDIDO escaneamos/ingresamos Scenario:PEDIDONACOMB
     And le doy click en Bulto contenedor
     And En el campo Codigo EAN agregamos/escaneamos Scenario:EANCT1
@@ -344,7 +408,7 @@ Feature: Recibo Nacional
     And esperamos
     And Capturo pantalla DetalleManifiesto
 
-   @RN_CEDIS_CONT @ReciboNacional
+   @ReciboNacional @RN_CEDIS_CONT
   Scenario: RECIBO NACIONAL - CONTENEDOR
     And En el campo PEDIDO escaneamos/ingresamos Scenario:PEDIDONACOMB
     And esperamos
