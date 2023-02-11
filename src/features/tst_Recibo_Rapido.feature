@@ -84,7 +84,7 @@ Feature: Recibo Rápido
     And esperamos
     And Capturo pantalla DetalleManifiesto
 
-  @RECIBO_PPK
+  @RECIBO_PPK2
   Scenario: RECIBO RÁPIDO - APLICA PREPACK Cambio de CTD Enganche
     And En el campo PEDIDO escaneamos/ingresamos Scenario:PEDIDO2
     And En el campo EAN escaneamos/ingresamos Scenario:EAN2

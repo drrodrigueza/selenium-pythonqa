@@ -1,7 +1,7 @@
 import os
 
 
-class Inicializar():
+class Inicializar:
     # Directorio Base
     basedir = os.path.abspath(os.path.join(__file__, "../.."))
     DateFormat = '%d/%m/%Y'
@@ -21,7 +21,7 @@ class Inicializar():
     # HOJA DE DATOS EXCEL
     Excel = basedir + u'/data/DataTest.xlsx'
 
-    #CSV = basedir + u'/data/ajuste_inventario.csv'
+    # CSV = basedir + u'/data/ajuste_inventario.csv'
 
 
     PerfilChrome = basedir + u'/Data/perfiles/TestChrome'
@@ -98,10 +98,19 @@ class Inicializar():
             "PEDIDONAC": "A21",
             "PEDIDONAC2": "A22",
             "PEDIDONACOMP": "A24",
+            "PEDIDONACOMP2": "A26",
+            "PEDIDONACOMB": "H21",
             "CantNac": "C21",
+            "CantNac2": "C22",
             "CantNCOMP": "C24",
+            "CantNCOMP2": "C26",
+            "CantNCOMB": "I23",
+            "CantNCONT": "I26",
+            "CantNCONT2": "I27",
+            "CantNCONT3": "I28",
             "Empaque": "F21",
             "EmpaqueCOMP": "F24",
+            "EmpaqueCOMB": "J23",
             "EAN1": "B2",
             "EAN2": "B3",
             "EAN3": "B4",
@@ -114,9 +123,17 @@ class Inicializar():
             "EAN10": "B21",
             "EAN11": "B22",
             "EAN12": "B24",
+            "EAN13": "B26",
+            "EANPPK": "H23",
+            "EANCOMP": "H24",
+            "EANREG": "H25",
+            "EANCT1": "H26",
+            "EANCT2": "H27",
+            "EANCT3": "H28",
             "M002": "K2",
             "M007": "K3",
             "M009": "K4",
+            "M005": "L23",
             "NPartes": "C17",
             # "UMP": round(CANTIDAD1 / 2),
             "IMPRESORAZEBRA": "Epson test",

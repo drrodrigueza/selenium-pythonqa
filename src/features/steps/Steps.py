@@ -120,5 +120,14 @@ class StepsDefinitions(Inicializar):
         Selenium.get_elements(self, entity).send_keys(CSV)
         Selenium.send_especific_keys(self, entity, "Enter")
 
+    @step("En el campo (.*) agregamos/escaneamos (.*)")
+    def step_impl(self, elemento, text):
+        Selenium.esperar_elemento(self, elemento)
+        text = Selenium.ReplaceWithContextValues(self, text)
+        Selenium.create_variable_scenary(self, text, Selenium.leer_celda(self, text))
+        text2 = Selenium.get_variable_scenary(self, text)
+        Selenium.get_elements(self, elemento).clear()
+        Selenium.get_elements(self, elemento).send_keys(text2)
+
 
 
