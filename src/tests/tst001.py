@@ -43,7 +43,7 @@ class test_001(Selenium, unittest.TestCase):
         Selenium.esperar(self)
 
         with allure.step(u'PASO 5: Ingresamos a la creación de usuario'):
-            Selenium.new_window(self, "https://qa-tiendas-frontend.titan.com.pa/seguridad/usuario/crear")
+            Selenium.cerrar_window(self, "https://qa-tiendas-frontend.titan.com.pa/seguridad/usuario/crear")
 
             Selenium.switch_to_windows_name(self, "Gestión de Seguridad")
             Selenium.page_has_loaded(self, )

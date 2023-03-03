@@ -14,6 +14,5 @@ Feature: Ajuste Masivo
     And le doy click en Shalom
     And En el campo Tipos ingresamos Scenario:TipoAjuste
     And esperamos
-    #And le doy click en Seleccionar CSV
-    And En el campo Seleccionar CSV ingresamos CSV
+    And cargamos el archivo Seleccionar CSV
     And esperamos

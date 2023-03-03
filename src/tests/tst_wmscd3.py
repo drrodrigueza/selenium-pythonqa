@@ -48,7 +48,7 @@ class test_004(Selenium, unittest.TestCase):
         Selenium.page_has_loaded(self)
 
         # GESTIÓN DE AUDITORIA - AJUSTE DE INVENTARIO
-        Selenium.new_window(self, self.AjusteInventario)
+        Selenium.cerrar_window(self, self.AjusteInventario)
         Selenium.switch_to_windows_name(self, "Ajuste de Inventario")
         Selenium.get_entity(self, "Titulo")
         Selenium.get_elements(self, "Shalom").click()

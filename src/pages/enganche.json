@@ -1,0 +1,63 @@
+{
+
+  "Titulo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//h4[contains(text(),'Armado de Box')]"
+  },
+
+  "Shalom": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/ngb-modal-window[1]/div[1]/div[1]/app-almacen-modal[1]/div[1]/div[2]/ul[1]/li[1]"
+  },
+
+  "Bulto": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='Bulto']"
+  },
+
+  "Codigo EAN": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(@id, 'digo EAN')]"
+  },
+
+  "Enganchador": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='Enganchador']"
+  },
+
+  "Preparador": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='Preparador Prepack']"
+  },
+
+  "Aceptar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(text(),'Aceptar')]"
+  },
+
+  "Destino": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='Destino']"
+  },
+
+  "Cantidad": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='cantidad']"
+  },
+
+  "Modal Box": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/ngb-modal-window[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]"
+  },
+
+  "Agregar Material": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(text(),'Agregar material')]"
+  },
+
+  "Cerrar e Imprimir": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(text(),'Cerrar e imprimir')]"
+  }
+
+}

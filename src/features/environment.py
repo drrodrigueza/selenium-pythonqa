@@ -20,7 +20,7 @@ def before_scenario(self, scenario,):
     if "TIENDA" in scenario.tags:
         self.driver = Selenium.abrir_navegador(self, "https://qa-tiendas-frontend.titan.com.pa/seguridad/login")
 
-    else :
+    else:
         self.driver = Selenium.abrir_navegador(self)
 
     #if Inicializar.Environment == 'Dev':

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import pytest
 import unittest
+import os
 from behave import *
 from selenium.webdriver.common.keys import Keys
 from functions.Functions import Functions as Selenium
@@ -47,6 +48,7 @@ class StepsDefinitions(Inicializar):
 
     @step("le doy click en (.*)")
     def step_impl(self, element):
+        Selenium.esperar_elemento(self, element)
         Selenium.get_elements(self, element).click()
 
     @step("esperamos")
@@ -61,6 +63,7 @@ class StepsDefinitions(Inicializar):
     @step("En el campo (.*) ingresamos (.*)")
     def step_impl(self, locator, text):
         Selenium.esperar_elemento(self, locator)
+        Selenium.get_elements(self, locator).clear()
         text = Selenium.ReplaceWithContextValues(self, text)
         Selenium.get_elements(self, locator).send_keys(text)
         Selenium.send_especific_keys(self, locator, "Enter")
@@ -109,3 +112,23 @@ class StepsDefinitions(Inicializar):
     @step("esperamos el elemento (.*)")
     def step_impl(self, elemento):
         Selenium.esperar_elemento(self, elemento)
+
+    @step("cargamos el archivo (.*)")
+    def step_impl(self, entity):
+        Selenium.esperar_elemento(self, entity)
+        basedir = os.path.abspath(os.path.join(__file__, "../.."))
+        CSV = "C:\Python310_SeleniumFramework\src\Data/ajuste_inventario.csv"
+        Selenium.get_elements(self, entity).send_keys(CSV)
+        Selenium.send_especific_keys(self, entity, "Enter")
+
+    @step("En el campo (.*) agregamos/escaneamos (.*)")
+    def step_impl(self, elemento, text):
+        Selenium.esperar_elemento(self, elemento)
+        text = Selenium.ReplaceWithContextValues(self, text)
+        Selenium.create_variable_scenary(self, text, Selenium.leer_celda(self, text))
+        text2 = Selenium.get_variable_scenary(self, text)
+        Selenium.get_elements(self, elemento).clear()
+        Selenium.get_elements(self, elemento).send_keys(text2)
+
+
+

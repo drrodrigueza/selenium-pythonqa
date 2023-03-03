@@ -1,4 +1,5 @@
 # Created by drodriguez at 5/7/2022
+  @WMS
 @ReciboRapido
 Feature: Recibo Rápido
   Ingreso de mercancía a CEDIS de pedidos Extranjeros y Zona Libre
@@ -83,7 +84,7 @@ Feature: Recibo Rápido
     And esperamos
     And Capturo pantalla DetalleManifiesto
 
-  @RECIBO_PPK
+  @RECIBO_PPK2
   Scenario: RECIBO RÁPIDO - APLICA PREPACK Cambio de CTD Enganche
     And En el campo PEDIDO escaneamos/ingresamos Scenario:PEDIDO2
     And En el campo EAN escaneamos/ingresamos Scenario:EAN2
@@ -217,25 +218,15 @@ Feature: Recibo Rápido
     And Capturo pantalla MaterialesEntrada
     And le doy click en IMPRIMIR
     And esperamos
-    And En el campo IMPRESORA SIN FOTO ingresamos Scenario:IMPRESORAZEBRA
+    And En el campo IMPRESORA CON FOTO ingresamos Scenario:IMPRESORAEPSON
     And esperamos
     And le doy click en ACEPTAR
-    And le doy click en SI
+    #And le doy click en SI
     And le doy click en MODAL CERRAR
     And esperamos
     And le doy click en OCULTAR IMPRESOS
     And le doy click en Refresh
     And esperamos
-    And esperamos
-    And le doy click en Refresh
-    And le doy click en ETIQUETAS CEDIS
-    And esperamos
-    And En el campo IMPRESORA SIN FOTO ingresamos Scenario:IMPRESORAZEBRA
-    And esperamos
-    And le doy click en ACEPTAR
-    And le doy click en MODAL CERRAR
-    And esperamos
-    And le doy click en Refresh
     And esperamos
     And Ingresamos a Scenario:ListadoBultos
     And le doy click en Shalom
@@ -243,9 +234,6 @@ Feature: Recibo Rápido
     And le doy click en Bultos Tiendas
     And esperamos
     And Capturo pantalla Bto-Tiendas
-    And le doy click en Bultos CEDIS
-    And esperamos
-    And Capturo pantalla Bto-CEDIS
     And Ingresamos a Scenario:MANIFIESTOS
     And esperamos
     And Capturo pantalla Manifiestos

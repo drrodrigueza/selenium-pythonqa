@@ -15,9 +15,14 @@
     "ValueToFind": "//body/app-root[1]/block-ui[1]/main[1]/div[3]/div[1]/app-ajuste-inventario[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]"
   },
 
+  "Succes": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/block-ui/main/div[3]/div/app-ajuste-inventario/div/div/div/div/div/div[1]/div[2]"
+  },
+
   "Seleccionar CSV": {
     "GetFieldBy": "Xpath",
-    "ValueToFind": "//button[contains(text(),'Seleccionar CSV')]"
+    "ValueToFind": "//body/app-root[1]/block-ui[1]/main[1]/div[3]/div[1]/app-ajuste-inventario[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]"
   },
 
   "Guardar": {
