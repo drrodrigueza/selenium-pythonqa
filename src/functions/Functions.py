@@ -1,4 +1,4 @@
-#coding=utf-8
+# -*- coding= utf-8 -*-
 import allure
 import openpyxl
 from functions.Inicializar import Inicializar
@@ -295,7 +295,7 @@ class Functions(Inicializar):
 
     ##############   -=_Wait Elements_=-   #############################
     ##########################################################################
-    def esperar(self, timeLoad=12):
+    def esperar(self, timeLoad=8):
         print ("Esperar: Inicia ("+str(timeLoad)+")")
         try:
                 totalWait = 0

@@ -221,7 +221,7 @@ Feature: Recibo Rápido
     And En el campo IMPRESORA CON FOTO ingresamos Scenario:IMPRESORAEPSON
     And esperamos
     And le doy click en ACEPTAR
-    And le doy click en SI
+    #And le doy click en SI
     And le doy click en MODAL CERRAR
     And esperamos
     And le doy click en OCULTAR IMPRESOS

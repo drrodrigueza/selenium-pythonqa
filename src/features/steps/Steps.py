@@ -63,6 +63,7 @@ class StepsDefinitions(Inicializar):
     @step("En el campo (.*) ingresamos (.*)")
     def step_impl(self, locator, text):
         Selenium.esperar_elemento(self, locator)
+        Selenium.get_elements(self, locator).clear()
         text = Selenium.ReplaceWithContextValues(self, text)
         Selenium.get_elements(self, locator).send_keys(text)
         Selenium.send_especific_keys(self, locator, "Enter")

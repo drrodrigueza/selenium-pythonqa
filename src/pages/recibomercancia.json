@@ -269,6 +269,11 @@
     "ValueToFind": "//a[@id='bultoscedis']"
   },
 
+  "Vista Recepcion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a[@id='recepcion']"
+  },
+
   "Compuesto": {
     "GetFieldBy": "Xpath",
     "ValueToFind": "//tbody/tr[1]/td[1]/button[1]/i[1]"
@@ -307,5 +312,10 @@
   "Agregar Material": {
     "GetFieldBy": "Xpath",
     "ValueToFind": "//button[contains(text(),'Agregar Material')]"
+  },
+
+  "Clear": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//body/ngb-modal-window[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[2]/div[1]/div[1]/ng-select[1]/div[1]/span[1]"
   }
 }

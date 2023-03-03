@@ -1,0 +1,22 @@
+{
+
+  "Metromall": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//b[contains(text(),'METROMALL')]"
+  },
+
+  "Pedido": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='Pedido']"
+  },
+
+  "Codigo EAN": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[contains(@id, 'digo EAN')]"
+  },
+
+  "Clear": {
+    "GetFieldBy": "id",
+    "ValueToFind": ""
+  }
+}

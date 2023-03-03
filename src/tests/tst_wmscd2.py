@@ -65,7 +65,7 @@ class test_003(Selenium, unittest.TestCase):
             Selenium.esperar(self)
 
         # GESTIÓN DE RECIBO - RECIBO RÁPIDO
-        Selenium.new_window(self, self.ReciboRapido)
+        Selenium.cerrar_window(self, self.ReciboRapido)
         Selenium.switch_to_windows_name(self, "Recibo Rápido")
         Selenium.get_entity(self, "Titulo")
         Selenium.get_elements(self, "Shalom").click()
@@ -129,7 +129,7 @@ class test_003(Selenium, unittest.TestCase):
             Selenium.esperar(self)
 
         #LISTADO DE BULTOS POR PEDIDO
-        Selenium.new_window(self, self.ListadoBultos)
+        Selenium.cerrar_window(self, self.ListadoBultos)
         Selenium.switch_to_windows_name(self, "Listado de Bultos por Pedido")
         Selenium.get_elements(self, "Shalom").click()
         Selenium.esperar(self)

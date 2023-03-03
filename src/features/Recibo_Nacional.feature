@@ -206,10 +206,16 @@ Feature: Recibo Nacional
     And le doy click en Imprimir
     And esperamos
     And En el campo IMPRESORA CON FOTO ingresamos Scenario:IMPRESORAEPSON
-    #And esperamos
-    #And le doy click en ACEPTAR
-    #And le doy click en SI
-    #And le doy click en MODAL CERRAR
+    And esperamos
+    And esperamos
+    And le doy click en ACEPTAR
+    And esperamos
+    And le doy click en SI
+    And esperamos
+    And le doy click en MODAL CERRAR
+    And esperamos
+    And esperamos
+    And le doy click en Vista Bultos CEDIS
     And esperamos
     And le doy click en ETIQUETAS CEDIS
     And En el campo IMPRESORA SIN FOTO ingresamos Scenario:IMPRESORAZEBRA
@@ -225,6 +231,52 @@ Feature: Recibo Nacional
     And le doy click en Bultos CEDIS
     And esperamos
     And Capturo pantalla Bto-CEDIS
+    And Ingresamos a Scenario:MANIFIESTOS
+    And esperamos
+    And Capturo pantalla Manifiestos
+    And le doy click en ID Manifiesto
+    And esperamos
+    And le doy click en Ver Asiento
+    And esperamos
+    And Capturo pantalla DetalleManifiesto
+
+  @ReciboNacional @RN_CEDIS_CONT
+  Scenario: RECIBO NACIONAL - CONTENEDOR
+    And En el campo PEDIDO escaneamos/ingresamos Scenario:PEDIDONACONT
+    And esperamos
+    And le doy click en Bulto contenedor
+    And En el campo Codigo EAN agregamos/escaneamos Scenario:EANCT4
+    And En el campo Cantidad agregamos/escaneamos Scenario:CantNCOMB
+    And le doy click en Agregar Material
+    And esperamos
+    And En el campo Codigo EAN agregamos/escaneamos Scenario:EANCT5
+    And En el campo Cantidad agregamos/escaneamos Scenario:CantNCOMB
+    And le doy click en Agregar Material
+    And esperamos
+    And En el campo Codigo EAN agregamos/escaneamos Scenario:EANCT6
+    And En el campo Cantidad agregamos/escaneamos Scenario:CantNCOMB
+    And le doy click en Agregar Material
+    And esperamos
+    And Capturo pantalla ReciboNaContenedor
+    And le doy click en GUARDAR
+    And esperamos
+    And le doy click en Imprimir
+    And esperamos
+    And En el campo IMPRESORA SIN FOTO ingresamos Scenario:IMPRESORAZEBRA
+    And esperamos
+    And le doy click en ACEPTAR
+    And le doy click en SI
+    And le doy click en MODAL CERRAR
+    And esperamos
+    And esperamos
+    And Ingresamos a Scenario:ListadoBultos
+    And le doy click en Shalom
+    And En el campo Filtro Pedido escaneamos/ingresamos Scenario:PEDIDONACONT
+    And le doy click en Bultos Tiendas
+    And esperamos
+    And Capturo pantalla Bto-Tiendas
+    And esperamos
+    And esperamos
     And Ingresamos a Scenario:MANIFIESTOS
     And esperamos
     And Capturo pantalla Manifiestos
@@ -257,6 +309,77 @@ Feature: Recibo Nacional
     And En el campo IMPRESORA SIN FOTO ingresamos Scenario:IMPRESORAZEBRA
     And En el campo IMPRESORA CON FOTO ingresamos Scenario:IMPRESORAEPSON
     And le doy click en ACEPTAR
+    And esperamos
+    And le doy click en MODAL CERRAR
+    And esperamos
+    # Recibo material COMPUESTO
+    And Ingresamos a Scenario:ReciboNacional
+    And En el campo EAN NAC escaneamos/ingresamos Scenario:EANCOMP
+    And En el campo CANTIDAD A RECIBIR escaneamos/ingresamos Scenario:CantNCOMB
+    And En el campo UNIDAD DE EMPAQUE escaneamos/ingresamos Scenario:EmpaqueCOMB
+    And esperamos
+    And Capturo pantalla ReciboNac
+    And le doy click en GUARDAR
+    And esperamos
+    And le doy click en CompuestoNac
+    And esperamos
+    And En el campo Partes escaneamos/ingresamos Scenario:NPartes
+    And Capturo pantalla NumeroPartes
+    And esperamos
+    And le doy click en Guardar
+    And esperamos
+    And Capturo pantalla MaterialesEntrada
+    And le doy click en Imprimir
+    And esperamos
+    And le doy click en Clear
+    And En el campo IMPRESORA CON FOTO ingresamos Scenario:IMPRESORAEPSON
+    And esperamos
+    And le doy click en ACEPTAR
+    And esperamos
+    And le doy click en MODAL CERRAR
+    And esperamos
+    # Recibo material REGULAR
+    And En el campo EAN NAC escaneamos/ingresamos Scenario:EANREG
+    And En el campo CANTIDAD A RECIBIR escaneamos/ingresamos Scenario:CantNCOMB
+    And En el campo UNIDAD DE EMPAQUE escaneamos/ingresamos Scenario:EmpaqueCOMB
+    And esperamos
+    And Capturo pantalla ReciboNac
+    And le doy click en GUARDAR
+    And esperamos
+    And Capturo pantalla MaterialesEntrada
+    And le doy click en Imprimir
+    And esperamos
+    And le doy click en Clear
+    And En el campo IMPRESORA CON FOTO ingresamos Scenario:IMPRESORAEPSON
+    And esperamos
+    And le doy click en ACEPTAR
+    And esperamos
+    And le doy click en MODAL CERRAR
+    And esperamos
+    # Recibo material BULTO CONTENEDOR
+    And le doy click en Bulto contenedor
+    And En el campo Codigo EAN agregamos/escaneamos Scenario:EANCT1
+    And En el campo Cantidad agregamos/escaneamos Scenario:CantNCONT
+    And le doy click en Agregar Material
+    And esperamos
+    And En el campo Codigo EAN agregamos/escaneamos Scenario:EANCT2
+    And En el campo Cantidad agregamos/escaneamos Scenario:CantNCONT2
+    And le doy click en Agregar Material
+    And esperamos
+    And En el campo Codigo EAN agregamos/escaneamos Scenario:EANCT3
+    And En el campo Cantidad agregamos/escaneamos Scenario:CantNCONT3
+    And le doy click en Agregar Material
+    And esperamos
+    And Capturo pantalla ReciboNaContenedor
+    And le doy click en GUARDAR
+    And esperamos
+    And le doy click en Imprimir
+    And esperamos
+    #And le doy click en Clear
+    And En el campo IMPRESORA SIN FOTO ingresamos Scenario:IMPRESORAZEBRA
+    And esperamos
+    And le doy click en ACEPTAR
+    And esperamos
     And le doy click en MODAL CERRAR
     And esperamos
     And Ingresamos a Scenario:ListadoBultos
@@ -265,13 +388,18 @@ Feature: Recibo Nacional
     And le doy click en Bultos Enganche
     And esperamos
     And Capturo pantalla Bto-ENGANCHE
+    And esperamos
+    And le doy click en Bultos Tiendas
+    And esperamos
+    And Capturo pantalla Bto-Tiendas
+    And esperamos
     And Ingresamos a Scenario:ReciboNacional
     And esperamos
     And En el campo PEDIDO escaneamos/ingresamos Scenario:PEDIDONACOMB
+    And esperamos
     And le doy click en Pulmon
     And esperamos
     And Capturo pantalla PorPasarAPulmon
-    And esperamos
     And esperamos
     And le doy click en Seleccionar materiales
     And esperamos
@@ -291,168 +419,3 @@ Feature: Recibo Nacional
     And le doy click en Ver Asiento
     And esperamos
     And Capturo pantalla DetalleManifiesto
-    # Recibo material COMPUESTO
-    And Ingresamos a Scenario:ReciboNacional
-    And En el campo PEDIDO escaneamos/ingresamos Scenario:PEDIDONACOMB
-    And En el campo EAN NAC escaneamos/ingresamos Scenario:EANCOMP
-    And En el campo CANTIDAD A RECIBIR escaneamos/ingresamos Scenario:CantNCOMB
-    And En el campo UNIDAD DE EMPAQUE escaneamos/ingresamos Scenario:EmpaqueCOMB
-    And esperamos
-    And Capturo pantalla ReciboNac
-    And le doy click en GUARDAR
-    And esperamos
-    And le doy click en CompuestoNac
-    And esperamos
-    And En el campo Partes escaneamos/ingresamos Scenario:NPartes
-    And Capturo pantalla NumeroPartes
-    And esperamos
-    And le doy click en Guardar
-    And esperamos
-    And Capturo pantalla MaterialesEntrada
-    And le doy click en Imprimir
-    And esperamos
-    And En el campo IMPRESORA CON FOTO ingresamos Scenario:IMPRESORAEPSON
-    And esperamos
-    And le doy click en ACEPTAR
-    And le doy click en SI
-    And le doy click en MODAL CERRAR
-    And esperamos
-    And Ingresamos a Scenario:ListadoBultos
-    And le doy click en Shalom
-    And En el campo Filtro Pedido escaneamos/ingresamos Scenario:PEDIDONACOMB
-    And le doy click en Bultos Tiendas
-    And esperamos
-    And Capturo pantalla Bto-Tiendas
-    And esperamos
-    And Ingresamos a Scenario:MANIFIESTOS
-    And esperamos
-    And Capturo pantalla Manifiestos
-    And le doy click en ID Manifiesto
-    And esperamos
-    And le doy click en Ver Asiento
-    And esperamos
-    And Capturo pantalla DetalleManifiesto
-    # Recibo material REGULAR
-    And Ingresamos a Scenario:ReciboNacional
-    And En el campo PEDIDO escaneamos/ingresamos Scenario:PEDIDONACOMB
-    And En el campo EAN NAC escaneamos/ingresamos Scenario:EANREG
-    And En el campo CANTIDAD A RECIBIR escaneamos/ingresamos Scenario:CantNCOMB
-    And En el campo UNIDAD DE EMPAQUE escaneamos/ingresamos Scenario:EmpaqueCOMB
-    And esperamos
-    And Capturo pantalla ReciboNac
-    And le doy click en GUARDAR
-    And esperamos
-    And Capturo pantalla MaterialesEntrada
-    And le doy click en Imprimir
-    And esperamos
-    And En el campo IMPRESORA CON FOTO ingresamos Scenario:IMPRESORAEPSON
-    And esperamos
-    And le doy click en ACEPTAR
-    And le doy click en SI
-    And le doy click en MODAL CERRAR
-    And esperamos
-    And Ingresamos a Scenario:ListadoBultos
-    And le doy click en Shalom
-    And En el campo Filtro Pedido escaneamos/ingresamos Scenario:PEDIDONACOMB
-    And le doy click en Bultos Tiendas
-    And esperamos
-    And Capturo pantalla Bto-Tiendas
-    And esperamos
-    And Ingresamos a Scenario:MANIFIESTOS
-    And esperamos
-    And Capturo pantalla Manifiestos
-    And le doy click en ID Manifiesto
-    And esperamos
-    And le doy click en Ver Asiento
-    And esperamos
-    And Capturo pantalla DetalleManifiesto
-    # Recibo material BULTO CONTENEDOR
-    And Ingresamos a Scenario:ReciboNacional
-    And En el campo PEDIDO escaneamos/ingresamos Scenario:PEDIDONACOMB
-    And le doy click en Bulto contenedor
-    And En el campo Codigo EAN agregamos/escaneamos Scenario:EANCT1
-    And En el campo Cantidad agregamos/escaneamos Scenario:CantNCONT
-    And le doy click en Agregar Material
-    And esperamos
-    And En el campo Codigo EAN agregamos/escaneamos Scenario:EANCT2
-    And En el campo Cantidad agregamos/escaneamos Scenario:CantNCONT2
-    And le doy click en Agregar Material
-    And esperamos
-    And En el campo Codigo EAN agregamos/escaneamos Scenario:EANCT3
-    And En el campo Cantidad agregamos/escaneamos Scenario:CantNCONT3
-    And le doy click en Agregar Material
-    And esperamos
-    And Capturo pantalla ReciboNaContenedor
-    And le doy click en GUARDAR
-    And esperamos
-    And le doy click en Imprimir
-    And esperamos
-    And En el campo IMPRESORA SIN FOTO ingresamos Scenario:IMPRESORAZEBRA
-    And esperamos
-    And le doy click en ACEPTAR
-    And le doy click en SI
-    And le doy click en MODAL CERRAR
-    And esperamos
-    And Ingresamos a Scenario:ListadoBultos
-    And le doy click en Shalom
-    And En el campo Filtro Pedido escaneamos/ingresamos Scenario:PEDIDONACOMB
-    And le doy click en Bultos Tiendas
-    And esperamos
-    And esperamos
-    And Ingresamos a Scenario:MANIFIESTOS
-    And esperamos
-    And Capturo pantalla Manifiestos
-    And le doy click en ID Manifiesto
-    And esperamos
-    And le doy click en Ver Asiento
-    And esperamos
-    And Capturo pantalla DetalleManifiesto
-
-   @ReciboNacional @RN_CEDIS_CONT
-  Scenario: RECIBO NACIONAL - CONTENEDOR
-    And En el campo PEDIDO escaneamos/ingresamos Scenario:PEDIDONACOMB
-    And esperamos
-    And le doy click en Bulto contenedor
-    And En el campo Codigo EAN agregamos/escaneamos Scenario:EANCT1
-    And En el campo Cantidad agregamos/escaneamos Scenario:CantNCONT
-    And le doy click en Agregar Material
-    And esperamos
-    And En el campo Codigo EAN agregamos/escaneamos Scenario:EANCT2
-    And En el campo Cantidad agregamos/escaneamos Scenario:CantNCONT
-    And le doy click en Agregar Material
-    And esperamos
-    And En el campo Codigo EAN agregamos/escaneamos Scenario:EANCT3
-    And En el campo Cantidad agregamos/escaneamos Scenario:CantNCONT
-    And le doy click en Agregar Material
-    And esperamos
-    And Capturo pantalla ReciboNaContenedor
-    And le doy click en GUARDAR
-    And esperamos
-    And le doy click en Imprimir
-    And esperamos
-    And En el campo IMPRESORA SIN FOTO ingresamos Scenario:IMPRESORAZEBRA
-    And esperamos
-    And le doy click en ACEPTAR
-    And le doy click en SI
-    And le doy click en MODAL CERRAR
-    And esperamos
-    And esperamos
-    And Ingresamos a Scenario:ListadoBultos
-    And le doy click en Shalom
-    And En el campo Filtro Pedido escaneamos/ingresamos Scenario:PEDIDONACOMB
-    And le doy click en Bultos Tiendas
-    And esperamos
-    And Capturo pantalla Bto-Tiendas
-    And esperamos
-    And esperamos
-    And Ingresamos a Scenario:MANIFIESTOS
-    And esperamos
-    And Capturo pantalla Manifiestos
-    And le doy click en ID Manifiesto
-    And esperamos
-    And le doy click en Ver Asiento
-    And esperamos
-    And Capturo pantalla DetalleManifiesto
-
-
-
